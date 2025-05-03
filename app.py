@@ -31,7 +31,7 @@ def get_download_link(bio, filename):
 
 # Streamlit UI (same as before)
 st.set_page_config(layout="wide")
-st.title("AI-Powered Medical Diagnosis System (Gemini API)")
+st.title("AI-Powered Medical Diagnosis System ")
 
 # Patient Information Section
 st.header("Patient Information")
@@ -84,7 +84,7 @@ if st.button("Generate Medical Report"):
     Format the response in clear markdown with headings.
     """
 
-    with st.spinner('Generating report with Gemini...'):
+    with st.spinner('Generating report ...'):
         try:
             # Generate content
             response = model.generate_content(prompt)
